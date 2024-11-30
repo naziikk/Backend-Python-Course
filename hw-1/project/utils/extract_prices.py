@@ -1,2 +1,5 @@
 def extract_prices(products):
-    pass
+    prices = []
+    for item in products:
+        prices.append(item.get_price())
+    return prices
