@@ -6,19 +6,20 @@ class Product:
         self.sale = 0
 
     def edit_category(self, new_category):
-        self.category = new_category
+        pass
 
     def edit_price(self, new_price):
-        self.price = new_price
+        pass
 
     def set_sale(self, sale):
-        self.sale = sale
+        pass
 
     def cancel_sale(self):
-        self.sale = 0
+        pass
 
     def get_price(self):
-        return self.price - self.price * (self.sale / 100)
+        # Это не тупо геттер - тут надо учесть скидку и еще то, что скидка указана в процентах
+        pass
 
     def __repr__(self):
         pass

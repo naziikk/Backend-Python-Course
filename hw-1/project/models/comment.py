@@ -10,15 +10,13 @@ class Comment:
         self.like_count = 0
 
     def edit_comment(self, new_text):
-        self.text = new_text
-        self.update_data = datetime.now()
-        return self
+        pass
 
     def like(self):
-        self.like_count += 1
+        pass
 
     def dislike(self):
-        self.like_count -= 1
+        pass
 
     def __repr__(self):
         pass
