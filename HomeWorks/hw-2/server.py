@@ -1,6 +1,8 @@
 from flask import Flask
 from flask import jsonify
 from dotenv import dotenv_values
+from flask import request
+from .controllers import sum_operation
 
 app = Flask(__name__)
 
@@ -12,10 +14,11 @@ def server_info() -> str:
 
 @app.route("/author")
 def author():
+    config = dotenv_values(".env")
     author_data = {
-        "name": "Nazar",
-        "course": 2,
-        "age": 19
+        "name": config["AUTHOR_NAME"],
+        "course": config["AUTHOR_COURSE"],
+        "age": config["AUTHOR_AGE"]
     }
     return jsonify(author_data)
 
@@ -32,6 +35,13 @@ def debug_status() -> bool:
     if "DEBUG" in config:
         return bool(config["DEBUG"])
     return False
+
+
+@app.route("/sum")
+def sum_calculation():
+    a = request.args.get('a', type=int)
+    b = request.args.get('b', type=int)
+    return jsonify({"sum": sum_operation(a, b)})
 
 
 if __name__ == "__main__":
