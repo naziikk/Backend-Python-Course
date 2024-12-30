@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e24b6e1b-5799-40e0-b587-eb507c98c701" name="Changes" comment="some tasks done">
-      <change afterPath="$PROJECT_DIR$/HomeWorks/hw-2/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeWorks/hw-2/controllers.py" afterDir="false" />
+    <list default="true" id="e24b6e1b-5799-40e0-b587-eb507c98c701" name="Changes" comment="sum + controllers added">
+      <change afterPath="$PROJECT_DIR$/HomeWorks/hw-2/test_controllers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorks/hw-2/.env" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorks/hw-2/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorks/hw-2/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorks/hw-2/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeWorks/hw-2/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorks/hw-2/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorks/hw-2/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorks/hw-2/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeWorks/hw-2/controllers.py" beforeDir="false" afterPath="$PROJECT_DIR$/HomeWorks/hw-2/controllers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +42,7 @@
     "Makefile Target.clear.executor": "Run",
     "Makefile Target.help.executor": "Run",
     "Makefile Target.lint.executor": "Run",
+    "Makefile Target.test.executor": "Run",
     "Makefile Target.venv.executor": "Run",
     "Python tests.Python tests for test_comment.TestComment.test_edit_comment.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -64,15 +63,9 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Makefile Target.add_dependency">
+  <component name="RunManager" selected="Makefile Target.help">
     <configuration name="add_dependency" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/HomeWorks/hw-2/Makefile" target="add_dependency" workingDirectory="" arguments="">
-        <envs />
-      </makefile>
-      <method v="2" />
-    </configuration>
-    <configuration name="clear" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
-      <makefile filename="$PROJECT_DIR$/HomeWorks/hw-2/Makefile" target="clear" workingDirectory="" arguments="">
         <envs />
       </makefile>
       <method v="2" />
@@ -89,6 +82,12 @@
       </makefile>
       <method v="2" />
     </configuration>
+    <configuration name="test" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/HomeWorks/hw-2/Makefile" target="test" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
     <configuration name="venv" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
       <makefile filename="$PROJECT_DIR$/HomeWorks/hw-2/Makefile" target="venv" workingDirectory="" arguments="">
         <envs />
@@ -97,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Makefile Target.help" />
+        <item itemvalue="Makefile Target.test" />
         <item itemvalue="Makefile Target.add_dependency" />
         <item itemvalue="Makefile Target.venv" />
-        <item itemvalue="Makefile Target.help" />
         <item itemvalue="Makefile Target.lint" />
-        <item itemvalue="Makefile Target.clear" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +123,7 @@
       <workItem from="1732978032550" duration="3175000" />
       <workItem from="1735537535667" duration="1778000" />
       <workItem from="1735539320974" duration="546000" />
-      <workItem from="1735539877597" duration="1441000" />
+      <workItem from="1735539877597" duration="3989000" />
     </task>
     <task id="LOCAL-00001" summary="some tasks done">
       <option name="closed" value="true" />
@@ -134,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735540330375</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sum + controllers added">
+      <option name="closed" value="true" />
+      <created>1735541592094</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1735541592094</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +151,8 @@
     <MESSAGE value="check commit" />
     <MESSAGE value="some fix" />
     <MESSAGE value="some tasks done" />
-    <option name="LAST_COMMIT_MESSAGE" value="some tasks done" />
+    <MESSAGE value="sum + controllers added" />
+    <option name="LAST_COMMIT_MESSAGE" value="sum + controllers added" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Pyhon_Backend_course$.coverage" NAME=" Coverage Results" MODIFIED="1732978868574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hw-1/project/models/tests" />
